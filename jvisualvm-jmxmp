@@ -1,0 +1,7 @@
+#! /bin/bash -x
+
+JAR=/tmp/jmxremote_optional.jar
+
+curl -o $JAR https://repo1.maven.org/maven2/org/glassfish/external/opendmk_jmxremote_optional_jar/1.0-b01-ea/opendmk_jmxremote_optional_jar-1.0-b01-ea.jar
+
+jvisualvm --cp:p $JAR
